@@ -1,0 +1,62 @@
+{
+    "baseline": {
+        "display_name": "Baseline (FP32 Eager)",
+        "final_miou": 0.5331977920667017,
+        "best_miou": 0.5395190856475306,
+        "avg_throughput_samples_sec": 7.99,
+        "speedup_vs_baseline": 1.0,
+        "avg_epoch_wall_time_sec": 128.35,
+        "avg_peak_memory_mb": 12801.8,
+        "avg_compute_time_ms": 1059.179,
+        "avg_h2d_time_ms": 1.743,
+        "compilation_time_sec": null
+    },
+    "amp": {
+        "display_name": "AMP (Mixed Precision)",
+        "final_miou": 0.5307861374230206,
+        "best_miou": 0.5370247333600577,
+        "avg_throughput_samples_sec": 39.35,
+        "speedup_vs_baseline": 4.924,
+        "avg_epoch_wall_time_sec": 25.94,
+        "avg_peak_memory_mb": 6999.3,
+        "avg_compute_time_ms": 210.653,
+        "avg_h2d_time_ms": 1.719,
+        "compilation_time_sec": null
+    },
+    "compile": {
+        "display_name": "torch.compile (Fusion)",
+        "final_miou": 0.5272164037748741,
+        "best_miou": 0.5300605468414445,
+        "avg_throughput_samples_sec": 10.65,
+        "speedup_vs_baseline": 1.332,
+        "avg_epoch_wall_time_sec": 97.53,
+        "avg_peak_memory_mb": 12445.4,
+        "avg_compute_time_ms": 804.26,
+        "avg_h2d_time_ms": 1.749,
+        "compilation_time_sec": 18.02555149499858
+    },
+    "streams": {
+        "display_name": "CUDA Streams (Async)",
+        "final_miou": 0.5331977920667017,
+        "best_miou": 0.5395190856475306,
+        "avg_throughput_samples_sec": 6.89,
+        "speedup_vs_baseline": 0.862,
+        "avg_epoch_wall_time_sec": 148.81,
+        "avg_peak_memory_mb": 12843.8,
+        "avg_compute_time_ms": 1187.479,
+        "avg_h2d_time_ms": 2.022,
+        "compilation_time_sec": null
+    },
+    "amp_compile": {
+        "display_name": "AMP + torch.compile",
+        "final_miou": 0.5269285731130201,
+        "best_miou": 0.5312762259449054,
+        "avg_throughput_samples_sec": 42.09,
+        "speedup_vs_baseline": 5.267,
+        "avg_epoch_wall_time_sec": 24.4,
+        "avg_peak_memory_mb": 6593.8,
+        "avg_compute_time_ms": 190.337,
+        "avg_h2d_time_ms": 1.739,
+        "compilation_time_sec": 20.244523328998184
+    }
+}
